@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddShoppingListActivity">
+
+    <!-- TODO: Item Name TextInput-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_inputLayout"
+        style="@style/TextInputLayoutTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item"
+            style="@style/TextInputEditTextTheme"
+            android:hint="@string/item_name"
+            android:inputType="textCapWords"
+            android:maxLength="50" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TODO: Quantity TextInput-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/quantity_inputLayout"
+        style="@style/TextInputLayoutTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_inputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quantity"
+            style="@style/TextInputEditTextTheme"
+            android:hint="@string/quantity"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TODO: Units Spinner-->
+    <Spinner
+        android:id="@+id/unitSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="@id/quantity_inputLayout"
+        app:layout_constraintEnd_toEndOf="@id/quantity_inputLayout"
+        app:layout_constraintTop_toTopOf="@id/quantity_inputLayout" />
+
+    <!-- TODO: Add Item Button -->
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:background="@drawable/button_background"
+        android:text="@string/add_item"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintTop_toBottomOf="@id/quantity_inputLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

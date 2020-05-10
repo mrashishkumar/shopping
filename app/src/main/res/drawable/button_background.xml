@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- TODO: Display When Button is Pressed -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- Button Background -->
+            <gradient android:angle="90" android:centerX="0" android:endColor="@color/colorAccent" android:startColor="@color/colorPrimary" android:useLevel="true" />
+
+            <!-- Button Corner -->
+            <corners android:radius="@dimen/layout_corner_radius" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Button Background -->
+            <solid android:color="@color/colorPrimary" />
+            <!-- Button Corner -->
+            <corners android:radius="@dimen/layout_corner_radius" />
+        </shape>
+    </item>
+</selector>

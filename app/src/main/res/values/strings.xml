@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+
+    <string name="item_name">Item Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="quantity_s">Quantity:\u0020</string>
+    <string name="add_item">Add Item</string>
+</resources>

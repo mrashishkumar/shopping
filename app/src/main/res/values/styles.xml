@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Todo: TextInputLayout Theme -->
+    <style name="TextInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="hintTextAppearance">@style/TextAppearance</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/layout_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/layout_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/layout_corner_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/layout_corner_radius</item>
+    </style>
+
+    <style name="TextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <!-- Todo: TextInputEditText Theme -->
+    <style name="TextInputEditTextTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+</resources>
